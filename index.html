@@ -1,1 +1,60 @@
-starting app
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <title>Yamini's Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="assets/profile-pic-2.jpg"
+    style="border-radius: 50%;" />
+</head>
+<body>
+    <!-- nav bar -->
+    <nav id="nav-bar">
+        <!-- Logo of the page -->
+        <div class="logo">
+            <img src="assets/profile-pic-2.jpg" alt="logo icon"/>
+            <p>Durga Yamini</p>
+        </div>
+        <!-- nav bar links -->
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <!-- Logo of the page -->
+        <div class="logo">
+            <img src="assets/profile-pic-2.jpg" alt="logo icon"/>
+            <p>Durga Yamini</p>
+        </div>
+        <!-- hamburger icon and links -->
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <!-- profile section-->
+    <section id="profile">
+        <div class="profile-pic">
+            <img src="assets/profile-pic-1.webp" alt="profile pictuere"/>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
