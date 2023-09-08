@@ -6,20 +6,19 @@
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
     <title>Yamini's Portfolio</title>
-    <link rel="icon" type="image/x-icon" href="assets/profile-pic-2.jpg"
-    style="border-radius: 50%;" />
+    <link rel="icon" type="image/x-icon" href="assets/y-logo.png"/>
 </head>
 <body>
     <!-- nav bar -->
     <nav id="nav-bar">
         <!-- Logo of the page -->
         <div class="logo">
-            <img src="assets/profile-pic-2.jpg" alt="logo icon"/>
-            <p>Durga Yamini</p>
+            Durga Yamini
         </div>
         <!-- nav bar links -->
         <div>
             <ul class="nav-links">
+                <li><a href="#">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
@@ -30,8 +29,7 @@
     <nav id="hamburger-nav">
         <!-- Logo of the page -->
         <div class="logo">
-            <img src="assets/profile-pic-2.jpg" alt="logo icon"/>
-            <p>Durga Yamini</p>
+            Durga Yamini
         </div>
         <!-- hamburger icon and links -->
         <div class="hamburger-menu">
@@ -41,6 +39,7 @@
                 <span></span>
             </div>
             <div class="menu-links">
+                <li><a href="#" onclick="toggleMenu()">Home</a></li>
                 <li><a href="#about" onclick="toggleMenu()">About</a></li>
                 <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
                 <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
@@ -49,11 +48,66 @@
         </div>
     </nav>
     <!-- profile section-->
-    <section id="profile">
-        <div class="profile-pic">
-            <img src="assets/profile-pic-1.webp" alt="profile pictuere"/>
+    <div id="profile">
+        <div class="container">
+            <div class="profile-intro">
+                <p class="intro-p1">Hello, I am</p>
+                <h1 class="intro-name">Durga Yamini</h1>
+                <p class="intro-p2">Full Stack .NET Developer</p>
+            </div>
+            <div class="profile-pic">
+                <img src="assets/profile-pic-1.webp" alt="profile pictuere"/>
+            </div>
         </div>
-    </section>
+    </div>
+    <!-- about section -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col1">
+                    <img src="assets/profile-pic-2.jpg" alt="profile picture 2"/>
+                </div>
+                <div class="about-col2">
+                    <h1 class="about-me">About Me</h1>
+                    <p>Software Engineer with 3+ years of experience
+                        in developing applications.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('education')">Education</p>
+                        <p class="tab-links" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="education">
+                        <ul>
+                            <li><b>2018-2020</b> <br>
+                                NIT Karnataka, M.Tech CSE </li>
+                                <li><b>2013-2017</b> <br>
+                                    IIIT Nuzvid, B.Tech CSE </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="skills">
+                        <ul>
+                            <li><b>Backend</b> <br>
+                                 C++, C#, ASP.NET Web API, ASP.NET MVC, Entity Framework, SQL, Apache Kafka</li>
+                            <li><b>Frontend</b> <br>
+                                HTML, CSS, JavaScript, TypeScript, Angular, NgRx
+                            </li>
+                            <li><b>Cloud&Tools</b> <br>
+                                 Azure, TFS, Git, Docker, Kubernetes, Visual Studio, Visual Studio Code, MSSQL Server, Postman</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><b>2023-present</b> <br>
+                                OpenText, Software Engineer </li>
+                                <li><b>2020-2023</b> <br>
+                                    Itron, Software Engineer </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
     <script src="script.js"></script>
 </body>
